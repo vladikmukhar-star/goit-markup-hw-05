@@ -7,7 +7,7 @@
   font-size: 36px;
 }
 
-ul {
+.list-none {
   list-style: none;
 }
 
@@ -16,6 +16,10 @@ ul {
 }
 
 .team-description {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 2%;
   text-align: center;
 }
 

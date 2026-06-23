@@ -6,11 +6,11 @@
 }
 
 .style {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: #434455;
 }
 
 .style-description {
@@ -19,4 +19,13 @@
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.description-features {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2e2f42;
+  letter-spacing: 0.02;
 }

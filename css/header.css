@@ -14,27 +14,55 @@
   font-family: Raleway;
 }
 
-.mailto {
+.mailto,
+.mailto:hover,
+.mailto:focus {
+  color: #404bbf;
   font-style: normal;
   color: #434455;
   text-decoration: none;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.02em;
   line-height: 1.5;
 }
 
-.tel {
+.tel,
+.tel:hover,
+.tel:focus {
+  color: #404bbf;
   font-style: normal;
   color: #434455;
   text-decoration: none;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.02em;
   line-height: 1.5;
 }
 
-nav a {
-  color: #2e2f42;
-  text-decoration: none;
+.features {
+  font-family: Roboto;
   font-weight: 500;
-  letter-spacing: 0.02;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2e2f42;
+}
+
+.team {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2e2f42;
+}
+.portfolio {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2e2f42;
 }

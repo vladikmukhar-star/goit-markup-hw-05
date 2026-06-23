@@ -5,13 +5,18 @@
 .page-title {
   color: #ffffff;
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.07;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 0.02em;
 }
-
-.button {
+.button,
+.button:hover,
+.button:focus {
   background-color: #4d5ae5;
   color: #ffffff;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
