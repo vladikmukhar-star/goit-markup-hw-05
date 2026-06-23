@@ -9,9 +9,7 @@
   font-weight: 700;
   letter-spacing: 0.02em;
 }
-.button,
-.button:hover,
-.button:focus {
+.button {
   background-color: #4d5ae5;
   color: #ffffff;
   cursor: pointer;
@@ -19,4 +17,8 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+}
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
 }
