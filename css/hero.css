@@ -1,6 +1,12 @@
 .hero {
   background-color: #2e2f42;
 }
+
+.hero-background {
+  padding: 188px 141px;
+  text-align: center;
+}
+
 .page-title {
   color: #ffffff;
   font-size: 56px;
@@ -26,9 +32,4 @@
 .button:hover,
 .button:focus {
   background-color: #404bbf;
-}
-
-.hero-background {
-  padding: 188px 141px;
-  text-align: center;
 }

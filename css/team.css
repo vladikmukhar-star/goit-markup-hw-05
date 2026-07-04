@@ -64,10 +64,9 @@
   gap: 24px;
   padding: 0px 15px;
 }
-section {
+.section-padding {
   padding: 120px 0px;
 }
-
 img {
   display: block;
 }
