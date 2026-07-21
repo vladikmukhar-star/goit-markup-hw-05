@@ -115,3 +115,19 @@
     display: none;
   }
 }
+
+.flex-social-list {
+  display: flex;
+  width: 288px;
+}
+
+.menu-social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  fill: #f4f4fd;
+}
