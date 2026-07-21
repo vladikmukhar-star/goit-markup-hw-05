@@ -1,44 +1,67 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
-  background-color: #fff;
-}
-
-ul {
-  list-style: none;
-}
-
-.container {
-  max-width: 1158px;
-
-  margin-left: auto;
-  margin-right: auto;
-
-  padding-left: 15px;
-  padding-right: 15px;
+  background-color: #ffffff;
+  margin: 0;
 }
 
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
+  list-style: none;
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
-.sr-only {
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
   position: absolute;
-  white-space: nowrap;
   width: 1px;
   height: 1px;
-  overflow: hidden;
+  margin: -1px;
   border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
+  white-space: nowrap;
   clip-path: inset(100%);
-  margin: -1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Контейнер */
+.container {
+  min-width: 320px;
+  max-width: 428px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }

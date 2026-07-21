@@ -1,10 +1,8 @@
-/* Портфоліо - Базові стилі */
 .portfolio {
   padding: 96px 0;
 }
 
 .portfolio-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -18,37 +16,31 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .portfolio-item {
-  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus-within {
+.portfolio-item:hover {
   box-shadow:
-    0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16),
-    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+/* Обгортка картинок + Фікс випадання оверлею */
 .portfolio-thumb {
   position: relative;
   overflow: hidden;
 }
 
 .portfolio-thumb img {
-  display: block;
   width: 100%;
   height: 300px;
   object-fit: cover;
 }
 
-/* Оверлей */
 .portfolio-overlay {
   position: absolute;
   top: 0;
@@ -61,15 +53,11 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin: 0;
-
-  /* Висуваємо вниз */
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover .portfolio-overlay,
-.portfolio-item:focus-within .portfolio-overlay {
+.portfolio-item:hover .portfolio-overlay {
   transform: translateY(0);
 }
 
@@ -93,15 +81,14 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  margin: 0;
 }
 
-/* Адаптив під Планшет і Десктоп */
 @media screen and (min-width: 768px) {
   .portfolio-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 72px 24px;
+    column-gap: 24px;
+    row-gap: 72px;
   }
 
   .portfolio-item {
@@ -115,7 +102,7 @@
   }
 
   .portfolio-list {
-    gap: 48px 24px;
+    row-gap: 48px;
   }
 
   .portfolio-item {

@@ -1,5 +1,9 @@
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow:
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -9,16 +13,14 @@
 }
 
 .logo {
-  display: block;
-  padding: 16px 0;
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
-  text-decoration: none;
+  padding: 24px 0;
 }
 
 .logo .accent {
@@ -31,28 +33,21 @@
 }
 
 .menu-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0;
-  background-color: transparent;
+  background: transparent;
   border: none;
   cursor: pointer;
-  stroke: #2e2f42;
+  line-height: 0;
 }
 
-/*  TABLET - DESKTOP (>=768px)  */
-
 @media screen and (min-width: 768px) {
-  /* Ховаємо кнопку-гамбургер */
   .menu-toggle {
     display: none;
   }
 
-  /* Показуємо навігацію та контакти */
   .header-nav,
   .contacts-address {
-    display: flex;
+    display: block;
   }
 
   .header-container {
@@ -60,44 +55,27 @@
   }
 
   .logo {
-    padding: 24px 0;
     margin-right: 120px;
   }
 
-  .header-nav {
-    margin-right: auto;
-  }
-
-  .header-link,
-  .header-contact {
+  .header-link {
     display: flex;
-    align-items: center;
     gap: 40px;
   }
 
-  .contacts-address {
-    font-style: normal;
-  }
-
-  .nav-link,
-  .contact-link {
+  .nav-link {
     display: block;
     padding: 24px 0;
-    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-decoration: none;
+    color: #2e2f42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .nav-link {
-    font-weight: 500;
-    color: #2e2f42;
-    position: relative;
-  }
-
   .nav-link.current {
+    position: relative;
     color: #404bbf;
   }
 
@@ -112,22 +90,47 @@
     border-radius: 2px;
   }
 
-  .contact-link {
-    font-weight: 400;
-    color: #434455;
+  .contacts-address {
+    font-style: normal;
+    margin-left: auto;
   }
 
-  .nav-link:hover,
-  .nav-link:focus,
+  .header-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   .contact-link:hover,
-  .contact-link:focus {
+  .contact-link:focus,
+  .nav-link:hover,
+  .nav-link:focus {
     color: #404bbf;
   }
 }
 
-/* Невелике уточнення для Десктопа (1158px+) */
 @media screen and (min-width: 1158px) {
   .logo {
     margin-right: 76px;
+  }
+
+  .header-contact {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
   }
 }

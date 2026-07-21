@@ -1,4 +1,3 @@
-/* Базові стилі (Mobile: 320px - 767px) */
 .page-footer {
   background-color: #2e2f42;
   padding: 96px 0;
@@ -11,12 +10,10 @@
   gap: 72px;
 }
 
-/* Блок 1: Логотип та опис */
 .footer-left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 
 .logo-footer {
@@ -28,7 +25,6 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
   color: #f4f4fd;
 }
 
@@ -42,11 +38,8 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin: 0;
-  text-align: left;
 }
 
-/* Блок 2: Соцмережі */
 .footer-socials {
   display: flex;
   flex-direction: column;
@@ -59,16 +52,12 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-top: 0;
   margin-bottom: 16px;
 }
 
 .footer-socials .icons-links {
   display: flex;
   gap: 16px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .media-color {
@@ -77,15 +66,13 @@
 }
 
 .footer-social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
-  color: #ffffff;
   border-radius: 50%;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -98,7 +85,6 @@
   fill: #f4f4fd;
 }
 
-/* Блок 3: Форма підписки */
 .footer-subscribe-container {
   display: flex;
   flex-direction: column;
@@ -112,7 +98,6 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-top: 0;
   margin-bottom: 16px;
 }
 
@@ -159,7 +144,6 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
-
   width: 165px;
   height: 40px;
   background-color: #4d5ae5;
@@ -168,7 +152,6 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -184,9 +167,6 @@
   fill: #ffffff;
 }
 
-/* ==========================================
-   ПЛАНШЕТ (від 768px до 1157px)
-   ========================================== */
 @media screen and (min-width: 768px) {
   .footer-container {
     flex-direction: row;
@@ -194,13 +174,11 @@
     align-items: baseline;
     row-gap: 72px;
     column-gap: 24px;
-    width: 552px; /* Стандартна ширина контейнера GoIT для планшета */
-    margin: 0 auto;
+    width: 552px;
   }
 
   .footer-left {
     align-items: flex-start;
-    text-align: left;
   }
 
   .footer-socials {
@@ -221,9 +199,6 @@
   }
 }
 
-/* ==========================================
-   ДЕСКТОП (від 1158px)
-   ========================================== */
 @media screen and (min-width: 1158px) {
   .page-footer {
     padding: 100px 0;
