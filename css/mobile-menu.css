@@ -129,5 +129,7 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  color: #ffffff;
   fill: #f4f4fd;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
