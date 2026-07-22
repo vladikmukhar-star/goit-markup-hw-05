@@ -111,7 +111,6 @@
 
 .subscribe-label {
   width: 100%;
-  max-width: 288px;
 }
 
 .subscribe-input {
@@ -216,6 +215,7 @@
   }
 
   .footer-subscribe-container {
-    margin-left: 80px;
+    align-items: flex-start;
+    padding-left: 83px;
   }
 }

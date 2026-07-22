@@ -3,7 +3,7 @@
    ========================================== */
 .hero {
   background-color: #2e2f42;
-  padding: 112px 0;
+  padding: 72px 0;
   text-align: center;
   margin: 0 auto;
   max-width: 1440px;
@@ -30,7 +30,7 @@
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #ffffff;
-  max-width: 320px;
+  max-width: 216px;
   margin: 0 auto 72px auto;
 }
 
